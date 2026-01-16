@@ -1,0 +1,101 @@
+* {
+    color:black;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 0.45rem;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
+.main-body {
+    display:flex;
+    flex-direction: column;
+}
+
+/*Introduction card*/
+.intro-card {
+    min-height: 50vh;
+    padding: clamp(1.7rem, 2vw, 2rem);
+    flex: 1;
+    background-image: linear-gradient(rgba(6, 6, 6, 0.875), rgba(0,0,0,0.55)), url("./image/terms-wallpaper.jpg");
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+}
+
+.intro-card p {
+    margin-top: 5rem;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 0.45rem;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+/*Conditions*/
+.conditions {
+    background-color: #F6F7FA;
+    text-align: center;
+    flex: 1;
+    padding: clamp(1.5rem, 2vw, 2rem);
+}
+
+.condition {
+    box-shadow: 2px 2px 0 grey;
+    background-color: #FFFFFF;
+    border: 1px solid #E3E4E8;
+    margin: clamp(0.5rem, 1vw, 1rem) auto;
+    padding: clamp(0.8rem, 1vw, 2rem) clamp(0.5rem, 1vw, 1rem);
+}
+
+.conditions .condition h2 {
+    color: #121212;
+    font-size: clamp(1.3rem, 2vw, 2.2rem);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: clamp(1.5rem, 4vw, 3rem) auto clamp(1.5rem, 4vw, 3rem);
+}
+
+.conditions .condition p {
+    color: #2B2B2B;
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    margin: 0;
+    letter-spacing: 0.05rem;
+}
+
+.conditions .condition ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.condition li {
+    font-size: clamp(0.7rem, 1vw, 1.4rem);
+    font-weight:600;
+    margin: clamp(0.7rem, 0.5vw, 1.4rem) auto;
+}
+
+/*Return*/
+.intro-card a {
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    text-decoration: none;
+}
